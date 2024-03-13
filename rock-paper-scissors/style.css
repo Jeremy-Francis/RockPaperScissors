@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(68, 98, 105);
+}
+
+p {
+    color: rgb(179, 199, 199);
+}
+
+#nav-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#text {
+    font-size: 4rem;
+    font-style: italic;
+    color: rgb(179, 199, 199);
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+
+#containter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.seperate-section {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.participants {
+    font-size: 3rem;
+}
+
+.win-recording {
+    font-size: 2rem;
+}
+
+#last-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#main-game {
+
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    /* justify-content: space-between; */
+
+}
+
+#first-image {
+
+    transform: scaleX(-1);
+}
+
+.three-iamges-rps {
+    width: 40%;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    /* justify-content: space-between; */
+
+}
+
+.toggle-text {
+    font-size: 2rem;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+}
+
+.rps-buttons {
+    border: 1.2px solid rgb(7, 6, 6);
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(179, 199, 199);
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+
+
+.slide-in {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.slide-in-inverted {
+    animation: myAnimInverted 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes myAnim {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateY(8px);
+    }
+
+    80% {
+        transform: translateY(6.4px);
+    }
+
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
+
+@keyframes myAnimInverted {
+
+    0%,
+    100% {
+        transform: scaleX(-1) translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: scaleX(-1) translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: scaleX(-1) translateY(8px);
+    }
+
+    80% {
+        transform: scaleX(-1) translateY(6.4px);
+    }
+
+    90% {
+        transform: scaleX(-1) translateY(-6.4px);
+    }
+}
